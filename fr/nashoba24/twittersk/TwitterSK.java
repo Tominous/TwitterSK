@@ -204,12 +204,12 @@ public class TwitterSK extends JavaPlugin {
 				return e.getSource();
 			}
 		}, 0);
-		/*Skript.registerEvent("Twitter Unfollow Event", SimpleEvent.class, EvtOnUnfollow.class, "unfollow");
+		Skript.registerEvent("Twitter Unfollow Event", SimpleEvent.class, EvtOnUnfollow.class, "unfollow");
 		EventValues.registerEventValue(EvtOnUnfollow.class, User.class, new Getter<User, EvtOnUnfollow>() {
 			public User get(EvtOnUnfollow e) {
 				return e.getSource();
 			}
-		}, 0);*/
+		}, 0);
 		Skript.registerEvent("Twitter Quoted Status Event", SimpleEvent.class, EvtOnQuotedTweet.class, "tweet quote[d]");
 		EventValues.registerEventValue(EvtOnQuotedTweet.class, Status.class, new Getter<Status, EvtOnQuotedTweet>() {
 			public Status get(EvtOnQuotedTweet e) {
